@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: url(./assets/8c98994518b575bfd8c949e91d20548b.jpg)no-repeat top/cover;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    border: 5px solid rgba(128, 128, 128, 0.521);
+}
+
+.chatScreen{
+    height: 55vh;
+    /* background: burlywood; */
+    overflow-y: auto;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+.message-box {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem 0;
+    transition: all 1s ease;
+    animation-name:popUp ;
+    animation-duration: 1s;
+    /* flex-direction: row-reverse; */
+    
+}
+
+
+
+
+.user{
+    margin: 1rem 0;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row-reverse;
+    transition: all 0.9s ease;
+    animation-name:popUp ;
+    animation-duration: 1s;
+
+}
+
+.head{
+    text-align: center;
+    color: grey;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-shadow: 1px 2px 2px black ;
+   
+
+}
+
+.icon{
+    text-align: center;
+    padding-top:1rem;
+    font-size: 2rem;
+    width: 10%;
+}
+
+.message-content{
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+    border: 3px solid grey;
+    border-radius: 2rem;
+    
+}
+
+.chat-bar{
+    width: 100%;
+    border: 3px solid grey;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.chat-bar input{
+    outline:none;
+    border: none;
+    background: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.primaryBtn{
+    outline: none;
+    width: 10%;
+    border:none;
+    background: lightskyblue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin:0;
+    text-align: center;
+    border-radius:0 2rem 2rem 0;
+}
+
+.primaryBtn:hover{
+    background-color: lightgreen;
+    font-size: 1.4rem;
+}
+
+
+@keyframes popUp{
+    0%{
+        width: 0;
+        transform:scale(0);
+        opacity: 0;
+    }
+    50%{
+        width: 100%;
+        transform:scale(1);
+        opacity: 1;
+    }
+}
