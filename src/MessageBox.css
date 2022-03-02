@@ -13,7 +13,7 @@
 }
 
 .chatScreen{
-    height: 55vh;
+    height: 50vh;
     /* background: burlywood; */
     overflow-y: auto;
     width: 100%;

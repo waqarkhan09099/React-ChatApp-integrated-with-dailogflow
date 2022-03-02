@@ -20,7 +20,7 @@ const MessageBox = () => {
     });
 
     axios
-      .post(`http://localhost:7001/talktochatbot`, {
+      .post(`https://dailogflow-integration.herokuapp.com/talktochatbot`, {
         text: text,
       })
       .then((response) => {
